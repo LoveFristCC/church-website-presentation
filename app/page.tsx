@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -94,13 +95,14 @@ export default function ChurchWebsitePresentationPage() {
                 ))}
               </div>
               <div className="border-l h-8" />
-              <Button
-                size="sm"
-                onClick={() => (window.location.href = "/seo-checklist")}
-                className="bg-green-600 hover:bg-green-700 text-white"
-              >
-                📋 SEO Checklist
-              </Button>
+              <Link href="/seo-checklist">
+                <Button
+                  size="sm"
+                  className="bg-green-600 hover:bg-green-700 text-white"
+                >
+                  📋 SEO Checklist
+                </Button>
+              </Link>
             </div>
 
             {/* Mobile Menu */}
@@ -110,22 +112,23 @@ export default function ChurchWebsitePresentationPage() {
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px]">
-                <SheetHeader className="border-b pb-4">
-                  <SheetTitle className="text-lg font-bold">
-                    Navigation
+              <SheetContent side="right" className="w-[320px] sm:w-[380px]">
+                <SheetHeader className="pb-6">
+                  <SheetTitle className="text-xl font-bold text-gray-900">
+                    Menu
                   </SheetTitle>
                 </SheetHeader>
-                <div className="flex flex-col mt-6">
-                  <div className="space-y-2">
+
+                <div className="flex flex-col h-full">
+                  <div className="flex-1 space-y-1">
                     {navItems.map((item) => (
                       <button
                         key={item.href}
                         onClick={() => scrollToSection(item.href)}
-                        className={`w-full px-4 py-3 rounded-lg text-left font-medium transition-colors ${
+                        className={`w-full px-4 py-3.5 rounded-xl text-left font-semibold transition-all ${
                           activeSection === item.href.substring(1)
-                            ? "bg-blue-600 text-white"
-                            : "text-gray-700 hover:bg-gray-100"
+                            ? "bg-blue-600 text-white shadow-md"
+                            : "text-gray-700 hover:bg-gray-50 active:bg-gray-100"
                         }`}
                       >
                         {item.label}
@@ -133,15 +136,16 @@ export default function ChurchWebsitePresentationPage() {
                     ))}
                   </div>
 
-                  <div className="border-t my-6" />
-
-                  <Button
-                    onClick={() => (window.location.href = "/seo-checklist")}
-                    className="w-full bg-green-600 hover:bg-green-700 text-white"
-                    size="lg"
-                  >
-                    📋 SEO Checklist
-                  </Button>
+                  <div className="pt-6 pb-2 border-t">
+                    <Link href="/seo-checklist" className="block">
+                      <Button
+                        className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white shadow-lg"
+                        size="lg"
+                      >
+                        📋 SEO Checklist
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
               </SheetContent>
             </Sheet>
@@ -886,13 +890,14 @@ export default function ChurchWebsitePresentationPage() {
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                 Making sure people can find you when they search
               </p>
-              <Button
-                size="lg"
-                onClick={() => (window.location.href = "/seo-checklist")}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg"
-              >
-                📋 View Complete SEO Checklist
-              </Button>
+              <Link href="/seo-checklist">
+                <Button
+                  size="lg"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg"
+                >
+                  📋 View Complete SEO Checklist
+                </Button>
+              </Link>
             </div>
 
             <Card className="p-10 bg-blue-50 rounded-2xl border-0">
@@ -1456,7 +1461,7 @@ export default function ChurchWebsitePresentationPage() {
 
             <div className="space-y-8">
               {/* Custom Development - Featured */}
-              <Card className="p-10 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl border-0">
+              <Card className="p-10 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl border-0 border-2 border-blue-600">
                 <div className="flex items-start justify-between mb-4 flex-wrap gap-3">
                   <div className="flex items-center gap-3">
                     <div className="text-3xl">✨</div>
@@ -1464,11 +1469,16 @@ export default function ChurchWebsitePresentationPage() {
                       Custom-Built Website
                     </h3>
                   </div>
-                  <Badge className="bg-blue-600 text-white">Premium</Badge>
+                  <Badge className="bg-blue-600 text-white text-sm px-3 py-1">
+                    Most Powerful
+                  </Badge>
                 </div>
-                <p className="text-lg text-gray-700 mb-8">
-                  A professionally designed website tailored specifically to
+                <p className="text-lg text-gray-700 mb-2">
+                  A professionally designed website built from the ground up for
                   your church's unique needs, brand, and vision.
+                </p>
+                <p className="text-base font-semibold text-blue-600 mb-8">
+                  The most flexible, scalable, and powerful option available.
                 </p>
                 <div className="grid md:grid-cols-2 gap-8 mb-8">
                   <div className="space-y-4">
@@ -1477,32 +1487,61 @@ export default function ChurchWebsitePresentationPage() {
                     </h4>
                     <ul className="space-y-3 text-gray-700">
                       <li className="flex items-start gap-3">
-                        <span className="text-blue-600">✓</span>
-                        <span>Complete control over design and features</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="text-blue-600">✓</span>
-                        <span>Unique branding and user experience</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="text-blue-600">✓</span>
-                        <span>Optimized performance and SEO</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="text-blue-600">✓</span>
-                        <span>Integration with any tool or system</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="text-blue-600">✓</span>
+                        <span className="text-blue-600 text-xl">✓</span>
                         <span>
-                          <strong>Automate content:</strong> Calendars sync
+                          <strong>Complete control</strong> over every design
+                          element and feature
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-blue-600 text-xl">✓</span>
+                        <span>
+                          <strong>Unique branding</strong> that stands out from
+                          template-based sites
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-blue-600 text-xl">✓</span>
+                        <span>
+                          <strong>Superior performance & SEO</strong> - no
+                          bloated plugins or unnecessary code
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-blue-600 text-xl">✓</span>
+                        <span>
+                          <strong>Seamless integrations</strong> with any tool,
+                          database, or third-party system
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-blue-600 text-xl">✓</span>
+                        <span>
+                          <strong>Content automation:</strong> Calendars sync
                           automatically, events update dynamically, daily
                           devotionals post on schedule
                         </span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <span className="text-blue-600">✓</span>
-                        <span>Scalable as your church grows</span>
+                        <span className="text-blue-600 text-xl">✓</span>
+                        <span>
+                          <strong>Built for growth</strong> - infinitely
+                          scalable as your ministry expands
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-blue-600 text-xl">✓</span>
+                        <span>
+                          <strong>No platform limitations</strong> - build
+                          exactly what you need
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-blue-600 text-xl">✓</span>
+                        <span>
+                          <strong>Professional ownership</strong> - you own the
+                          code, not locked into a platform
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -1541,14 +1580,17 @@ export default function ChurchWebsitePresentationPage() {
                   </div>
                 </div>
                 <div className="flex gap-3 flex-wrap">
-                  <Badge variant="outline" className="bg-white">
-                    Best for Large Churches
+                  <Badge variant="outline" className="bg-white border-blue-600 text-blue-600">
+                    Most Powerful Solution
                   </Badge>
-                  <Badge variant="outline" className="bg-white">
-                    500+ Members
+                  <Badge variant="outline" className="bg-white border-blue-600 text-blue-600">
+                    Best for Growing Churches
                   </Badge>
-                  <Badge variant="outline" className="bg-white">
-                    Maximum Flexibility
+                  <Badge variant="outline" className="bg-white border-blue-600 text-blue-600">
+                    Unlimited Possibilities
+                  </Badge>
+                  <Badge variant="outline" className="bg-white border-blue-600 text-blue-600">
+                    Professional Grade
                   </Badge>
                 </div>
               </Card>
@@ -1633,13 +1675,14 @@ export default function ChurchWebsitePresentationPage() {
                       </Badge>
                     </div>
                     <p className="text-gray-700 mb-4">
-                      Powers 43% of all websites. Ultimate flexibility,
-                      thousands of church themes, complete control.
+                      Open-source platform requiring technical maintenance.
+                      Plugin-dependent with frequent updates and security
+                      concerns. Can be complex to manage without developer help.
                     </p>
                     <div className="flex gap-2 flex-wrap">
-                      <Badge variant="outline">Most Powerful</Badge>
-                      <Badge variant="outline">Highly Flexible</Badge>
-                      <Badge variant="outline">Tech Required</Badge>
+                      <Badge variant="outline">Tech Heavy</Badge>
+                      <Badge variant="outline">Maintenance Required</Badge>
+                      <Badge variant="outline">Plugin Reliant</Badge>
                     </div>
                   </Card>
                 </div>
@@ -1659,10 +1702,11 @@ export default function ChurchWebsitePresentationPage() {
                         <strong>Under $50/mo:</strong> Squarespace or Tithe.ly
                       </li>
                       <li>
-                        <strong>$50-200/mo:</strong> Subsplash or WordPress
+                        <strong>$50-200/mo:</strong> Subsplash
                       </li>
                       <li>
-                        <strong>$200+/mo:</strong> Subsplash premium or custom
+                        <strong>$200+/mo:</strong> Custom-built website
+                        (recommended)
                       </li>
                     </ul>
                   </div>
@@ -1676,10 +1720,12 @@ export default function ChurchWebsitePresentationPage() {
                         Squarespace
                       </li>
                       <li>
-                        <strong>200-500 members:</strong> Subsplash or WordPress
+                        <strong>200-500 members:</strong> Subsplash or
+                        custom-built
                       </li>
                       <li>
                         <strong>500+ members:</strong> Custom-built website
+                        (strongly recommended)
                       </li>
                     </ul>
                   </div>
@@ -1689,15 +1735,16 @@ export default function ChurchWebsitePresentationPage() {
                     </h4>
                     <ul className="space-y-3 text-gray-700">
                       <li>
-                        <strong>Design & Aesthetics:</strong> Squarespace or
-                        custom
+                        <strong>Best Design & Performance:</strong> Custom-built
+                        website
                       </li>
                       <li>
                         <strong>All-in-one features:</strong> Subsplash or
                         Tithe.ly
                       </li>
                       <li>
-                        <strong>Flexibility:</strong> WordPress or custom
+                        <strong>Maximum Flexibility & Power:</strong>
+                        Custom-built website
                       </li>
                     </ul>
                   </div>

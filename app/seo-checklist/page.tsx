@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -301,12 +302,11 @@ export default function SEOChecklistPage() {
                 rankings
               </p>
             </div>
-            <Button
-              variant="outline"
-              onClick={() => (window.location.href = "/")}
-            >
-              ← Back to Presentation
-            </Button>
+            <Link href="/">
+              <Button variant="outline">
+                ← Back to Presentation
+              </Button>
+            </Link>
           </div>
         </div>
       </header>
