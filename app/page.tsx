@@ -166,23 +166,17 @@ export default function ChurchWebsitePresentationPage() {
             covering design, SEO, and functionality to connect with members and
             visitors effectively.
           </p>
-          {/* <div className="flex flex-wrap gap-4 justify-center pt-4">
-            <Button
-              size="lg"
-              onClick={() => scrollToSection("#opening")}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg"
-            >
-              Get Started
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={() => scrollToSection("#next-steps")}
-              className="border-2 px-8 py-6 text-lg"
-            >
-              Quick Wins
-            </Button>
-          </div> */}
+          <div className="bg-blue-50 p-10 rounded-2xl border-l-4 border-blue-600">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">
+                The Vision
+              </h3>
+              <p className="text-xl text-gray-700 leading-relaxed italic">
+                "We're planting a digital church campus that never closes.
+                People finding hope at 2am when they can't sleep. New believers
+                studying during lunch breaks. Seekers across the globe
+                discovering Jesus through your teaching."
+              </p>
+            </div>
         </div>
       </section>
 
@@ -194,6 +188,7 @@ export default function ChurchWebsitePresentationPage() {
               <Badge variant="secondary" className="text-sm px-4 py-1">
                 Section 1
               </Badge>
+
               <h2 className="text-5xl md:text-6xl font-bold text-gray-900">
                 The Power of First Impressions
               </h2>
@@ -293,17 +288,7 @@ export default function ChurchWebsitePresentationPage() {
               </ul>
             </Card>
 
-            <div className="bg-blue-50 p-10 rounded-2xl border-l-4 border-blue-600">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">
-                The Vision
-              </h3>
-              <p className="text-xl text-gray-700 leading-relaxed italic">
-                "We're planting a digital church campus that never closes.
-                People finding hope at 2am when they can't sleep. New believers
-                studying during lunch breaks. Seekers across the globe
-                discovering Jesus through your teaching."
-              </p>
-            </div>
+
           </div>
         </div>
       </section>
@@ -493,71 +478,6 @@ export default function ChurchWebsitePresentationPage() {
                 </p>
               </Card>
 
-              <Card className="p-10 bg-white rounded-2xl border-0 shadow-sm">
-                <div className="flex items-start gap-3 mb-6">
-                  <div className="text-3xl">⚡</div>
-                  <div>
-                    <h3 className="text-2xl font-bold mb-2 text-gray-900">
-                      Website Performance Metrics
-                    </h3>
-                    <p className="text-gray-600">
-                      Real-world performance data showing speed and optimization
-                      results
-                    </p>
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-4">
-                    <div className="aspect-video bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
-                      <img
-                        src="/images/performance.png"
-                        alt="Website Performance Metrics"
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-lg mb-2 text-gray-900">
-                        Core Performance Metrics
-                      </h4>
-                      <p className="text-gray-600 text-sm">
-                        Load times, responsiveness, and overall performance
-                        scores demonstrating optimized user experience
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="space-y-4">
-                    <div className="aspect-video bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
-                      <img
-                        src="/images/performance-2.png"
-                        alt="Additional Performance Data"
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-lg mb-2 text-gray-900">
-                        Advanced Performance Analysis
-                      </h4>
-                      <p className="text-gray-600 text-sm">
-                        Detailed metrics showing page speed optimization and
-                        mobile performance benchmarks
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-6 p-6 bg-blue-50 rounded-xl">
-                  <p className="text-sm text-gray-700">
-                    <strong className="text-blue-600">
-                      Why Performance Matters:
-                    </strong>{" "}
-                    53% of mobile users abandon sites that take longer than 3
-                    seconds to load. Fast websites rank better in Google and
-                    provide better user experience.
-                  </p>
-                </div>
-              </Card>
             </div>
           </div>
         </div>
@@ -925,6 +845,344 @@ export default function ChurchWebsitePresentationPage() {
             </Card>
 
             <Card className="p-10 bg-white rounded-2xl border-0 shadow-sm">
+              <div className="flex items-start gap-3 mb-8">
+                <div className="text-3xl">⚡</div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-2 text-gray-900">
+                    Website Performance: A Critical SEO Factor
+                  </h3>
+                  <p className="text-gray-600">
+                    Google uses page speed as a ranking factor. Slow sites get buried in search results, while fast sites rank higher and attract more visitors.
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-8">
+                {/* Why Metrics Matter */}
+                <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-8 rounded-xl">
+                  <h4 className="text-xl font-bold mb-4 text-gray-900">
+                    The Critical Impact of Performance on SEO
+                  </h4>
+                  <div className="space-y-4 text-gray-700">
+                    <p className="flex items-start gap-3">
+                      <span className="text-blue-600 font-bold text-xl">•</span>
+                      <span>
+                        <strong>53% of mobile users abandon</strong> sites that take longer than 3 seconds to load
+                      </span>
+                    </p>
+                    <p className="flex items-start gap-3">
+                      <span className="text-blue-600 font-bold text-xl">•</span>
+                      <span>
+                        <strong>Google uses page speed</strong> as a ranking factor - slow sites get buried in search results
+                      </span>
+                    </p>
+                    <p className="flex items-start gap-3">
+                      <span className="text-blue-600 font-bold text-xl">•</span>
+                      <span>
+                        <strong>Every second of delay</strong> can reduce conversions by up to 20%
+                      </span>
+                    </p>
+                    <p className="flex items-start gap-3">
+                      <span className="text-blue-600 font-bold text-xl">•</span>
+                      <span>
+                        <strong>Slow websites hurt visibility</strong> - they don't get traffic, so Google can't even measure their performance
+                      </span>
+                    </p>
+                  </div>
+                </div>
+
+                {/* Visual Comparison - Metrics */}
+                <div>
+                  <h4 className="text-xl font-bold mb-6 text-gray-900">
+                    Real Examples: Core Web Vitals Comparison
+                  </h4>
+                  <p className="text-gray-600 mb-4">
+                    Core Web Vitals are Google's official metrics for measuring user experience. These real examples show the dramatic difference between poor optimization, insufficient traffic, and excellence:
+                  </p>
+                  <p className="text-sm text-gray-500 mb-6 italic">
+                    💡 Click any image to view full-size
+                  </p>
+
+                  <Carousel
+                    opts={{
+                      align: "start",
+                      loop: true,
+                    }}
+                    className="w-full"
+                  >
+                    <CarouselContent>
+                      {/* Poor Example */}
+                      <CarouselItem>
+                        <div className="p-1">
+                          <Card className="overflow-hidden rounded-xl border-0 shadow-sm">
+                            <div className="bg-red-50 p-4 border-b-2 border-red-200">
+                              <p className="text-red-700 font-bold text-center text-xl">Poor Performance</p>
+                            </div>
+                            <div className="bg-gray-50 p-8">
+                              <a
+                                href="/poor-example-metrics.webp"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block cursor-pointer hover:opacity-90 transition-opacity"
+                              >
+                                <div className="bg-white rounded-xl overflow-hidden border-2 border-red-200 shadow-lg">
+                                  <img
+                                    src="/poor-example-metrics.webp"
+                                    alt="Poor Website Performance Metrics"
+                                    className="w-full h-auto"
+                                  />
+                                </div>
+                              </a>
+                              <div className="mt-6 bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
+                                <p className="text-gray-700">
+                                  <strong className="text-red-600">Result:</strong> Visitors leave before the page loads, Google downranks your site
+                                </p>
+                              </div>
+                            </div>
+                          </Card>
+                        </div>
+                      </CarouselItem>
+
+                      {/* Insufficient Traffic Example */}
+                      <CarouselItem>
+                        <div className="p-1">
+                          <Card className="overflow-hidden rounded-xl border-0 shadow-sm">
+                            <div className="bg-orange-50 p-4 border-b-2 border-orange-300">
+                              <p className="text-orange-700 font-bold text-center text-xl">Insufficient Traffic Data</p>
+                            </div>
+                            <div className="bg-gray-50 p-8">
+                              <a
+                                href="/average-no-metrics.webp"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block cursor-pointer hover:opacity-90 transition-opacity"
+                              >
+                                <div className="bg-white rounded-xl overflow-hidden border-2 border-orange-300 shadow-lg">
+                                  <img
+                                    src="/average-no-metrics.webp"
+                                    alt="Website with Insufficient Traffic Data"
+                                    className="w-full h-auto"
+                                  />
+                                </div>
+                              </a>
+                              <div className="mt-6 bg-orange-50 p-6 rounded-lg border-l-4 border-orange-600">
+                                <p className="text-gray-700">
+                                  <strong className="text-orange-600">Result:</strong> Not enough visitors for Google to measure - poor SEO means you're invisible in search results
+                                </p>
+                              </div>
+                            </div>
+                          </Card>
+                        </div>
+                      </CarouselItem>
+
+                      {/* Good Example */}
+                      <CarouselItem>
+                        <div className="p-1">
+                          <Card className="overflow-hidden rounded-xl border-0 shadow-sm">
+                            <div className="bg-green-50 p-4 border-b-2 border-green-200">
+                              <p className="text-green-700 font-bold text-center text-xl">Excellent Performance</p>
+                            </div>
+                            <div className="bg-gray-50 p-8">
+                              <a
+                                href="/good-example-metrics.webp"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block cursor-pointer hover:opacity-90 transition-opacity"
+                              >
+                                <div className="bg-white rounded-xl overflow-hidden border-2 border-green-200 shadow-lg">
+                                  <img
+                                    src="/good-example-metrics.webp"
+                                    alt="Excellent Website Performance Metrics"
+                                    className="w-full h-auto"
+                                  />
+                                </div>
+                              </a>
+                              <div className="mt-6 bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
+                                <p className="text-gray-700">
+                                  <strong className="text-green-600">Result:</strong> Fast loading, better SEO rankings, visitors stay and engage
+                                </p>
+                              </div>
+                            </div>
+                          </Card>
+                        </div>
+                      </CarouselItem>
+                    </CarouselContent>
+                    <CarouselPrevious className="hidden md:flex" />
+                    <CarouselNext className="hidden md:flex" />
+                  </Carousel>
+                </div>
+
+                {/* Visual Comparison - PageSpeed */}
+                <div>
+                  <h4 className="text-xl font-bold mb-6 text-gray-900">
+                    PageSpeed Insights: The Full Picture
+                  </h4>
+                  <p className="text-gray-600 mb-4">
+                    Google's PageSpeed Insights shows how your site performs on both mobile and desktop, plus actionable recommendations:
+                  </p>
+                  <p className="text-sm text-gray-500 mb-6 italic">
+                    💡 Click any image to view full-size
+                  </p>
+
+                  <Carousel
+                    opts={{
+                      align: "start",
+                      loop: true,
+                    }}
+                    className="w-full"
+                  >
+                    <CarouselContent>
+                      {/* Poor Example */}
+                      <CarouselItem>
+                        <div className="p-1">
+                          <Card className="overflow-hidden rounded-xl border-0 shadow-sm">
+                            <div className="bg-red-50 p-4 border-b-2 border-red-200">
+                              <p className="text-red-700 font-bold text-center text-xl">Needs Improvement</p>
+                            </div>
+                            <div className="bg-gray-50 p-8">
+                              <a
+                                href="/poor-example-pagespeed.webp"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block cursor-pointer hover:opacity-90 transition-opacity"
+                              >
+                                <div className="bg-white rounded-xl overflow-hidden border-2 border-red-200 shadow-lg max-w-3xl mx-auto">
+                                  <img
+                                    src="/poor-example-pagespeed.webp"
+                                    alt="Poor PageSpeed Score"
+                                    className="w-full h-auto"
+                                  />
+                                </div>
+                              </a>
+                              <div className="mt-6 bg-red-50 p-6 rounded-lg border-l-4 border-red-600 max-w-3xl mx-auto">
+                                <p className="text-gray-700">
+                                  <strong className="text-red-600">Result:</strong> Multiple performance issues, slow load times, poor mobile experience
+                                </p>
+                              </div>
+                            </div>
+                          </Card>
+                        </div>
+                      </CarouselItem>
+
+                      {/* Average Example */}
+                      <CarouselItem>
+                        <div className="p-1">
+                          <Card className="overflow-hidden rounded-xl border-0 shadow-sm">
+                            <div className="bg-yellow-50 p-4 border-b-2 border-yellow-200">
+                              <p className="text-yellow-700 font-bold text-center text-xl">Room for Growth</p>
+                            </div>
+                            <div className="bg-gray-50 p-8">
+                              <a
+                                href="/average-example-pagespeed.webp"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block cursor-pointer hover:opacity-90 transition-opacity"
+                              >
+                                <div className="bg-white rounded-xl overflow-hidden border-2 border-yellow-200 shadow-lg max-w-3xl mx-auto">
+                                  <img
+                                    src="/average-example-pagespeed.webp"
+                                    alt="Average PageSpeed Score"
+                                    className="w-full h-auto"
+                                  />
+                                </div>
+                              </a>
+                              <div className="mt-6 bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-600 max-w-3xl mx-auto">
+                                <p className="text-gray-700">
+                                  <strong className="text-yellow-600">Result:</strong> Decent performance but missing optimization opportunities
+                                </p>
+                              </div>
+                            </div>
+                          </Card>
+                        </div>
+                      </CarouselItem>
+
+                      {/* Good Example */}
+                      <CarouselItem>
+                        <div className="p-1">
+                          <Card className="overflow-hidden rounded-xl border-0 shadow-sm">
+                            <div className="bg-green-50 p-4 border-b-2 border-green-200">
+                              <p className="text-green-700 font-bold text-center text-xl">Outstanding</p>
+                            </div>
+                            <div className="bg-gray-50 p-8">
+                              <a
+                                href="/good-example-pagespeed.webp"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block cursor-pointer hover:opacity-90 transition-opacity"
+                              >
+                                <div className="bg-white rounded-xl overflow-hidden border-2 border-green-200 shadow-lg max-w-3xl mx-auto">
+                                  <img
+                                    src="/good-example-pagespeed.webp"
+                                    alt="Excellent PageSpeed Score"
+                                    className="w-full h-auto"
+                                  />
+                                </div>
+                              </a>
+                              <div className="mt-6 bg-green-50 p-6 rounded-lg border-l-4 border-green-600 max-w-3xl mx-auto">
+                                <p className="text-gray-700">
+                                  <strong className="text-green-600">Result:</strong> Optimized for both speed and user experience, maximum SEO benefit
+                                </p>
+                              </div>
+                            </div>
+                          </Card>
+                        </div>
+                      </CarouselItem>
+                    </CarouselContent>
+                    <CarouselPrevious className="hidden md:flex" />
+                    <CarouselNext className="hidden md:flex" />
+                  </Carousel>
+                </div>
+
+                {/* Key Takeaways */}
+                <div className="bg-blue-50 p-8 rounded-xl border-l-4 border-blue-600">
+                  <h4 className="text-xl font-bold mb-4 text-gray-900">
+                    What This Means for Your Church's SEO
+                  </h4>
+                  <div className="space-y-3 text-gray-700">
+                    <p className="flex items-start gap-3">
+                      <span className="text-blue-600 font-bold">✓</span>
+                      <span>
+                        <strong>Rankings depend on speed:</strong> Google prioritizes fast websites in search results
+                      </span>
+                    </p>
+                    <p className="flex items-start gap-3">
+                      <span className="text-blue-600 font-bold">✓</span>
+                      <span>
+                        <strong>Mobile-first indexing:</strong> Google judges your site based on mobile performance
+                      </span>
+                    </p>
+                    <p className="flex items-start gap-3">
+                      <span className="text-blue-600 font-bold">✓</span>
+                      <span>
+                        <strong>Visitor retention:</strong> Slow sites lose visitors before they even see your content
+                      </span>
+                    </p>
+                    <p className="flex items-start gap-3">
+                      <span className="text-blue-600 font-bold">✓</span>
+                      <span>
+                        <strong>Quality matters:</strong> Well-built sites (like custom development) naturally achieve better performance scores
+                      </span>
+                    </p>
+                  </div>
+                </div>
+
+                {/* Test Your Site CTA */}
+                {/* <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-8 rounded-xl text-white text-center">
+                  <h4 className="text-xl font-bold mb-3">Test Your Church Website Performance</h4>
+                  <p className="mb-4">Visit Google PageSpeed Insights to see how your site performs and get actionable recommendations</p>
+                  <a
+                    href="https://pagespeed.web.dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                  >
+                    Test Your Site Now →
+                  </a>
+                </div> */}
+              </div>
+            </Card>
+
+            <Card className="p-10 bg-white rounded-2xl border-0 shadow-sm">
               <div className="flex items-start gap-3 mb-6">
                 <div className="text-3xl">📊</div>
                 <div>
@@ -975,20 +1233,26 @@ export default function ChurchWebsitePresentationPage() {
                     <div className="p-1">
                       <Card className="overflow-hidden rounded-xl border-0 shadow-sm">
                         <div className="bg-gray-50 p-8">
-                          <div className="aspect-video bg-white rounded-xl overflow-hidden border border-gray-200">
-                            <img
-                              src="/images/google-search-console/3month.png"
-                              alt="Google Search Console - 3 Month Performance"
-                              className="w-full h-full object-contain"
-                            />
-                          </div>
+                          <a
+                            href="/images/google-search-console/last-year-vs-this-year-impressions.webp"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block cursor-pointer hover:opacity-90 transition-opacity"
+                          >
+                            <div className="aspect-video bg-white rounded-xl overflow-hidden border border-gray-200">
+                              <img
+                                src="/images/google-search-console/last-year-vs-this-year-impressions.webp"
+                                alt="Year-over-Year Impressions Comparison"
+                                className="w-full h-full object-contain"
+                              />
+                            </div>
+                          </a>
                           <div className="mt-6">
                             <h4 className="font-bold text-lg mb-2 text-gray-900">
-                              3-Month Performance Trends
+                              Year-over-Year Impressions Growth
                             </h4>
                             <p className="text-gray-600">
-                              Quarterly analysis showing clicks, impressions,
-                              and CTR improvements over recent months
+                              Comparing search impressions from last year to this year, demonstrating the impact of consistent SEO efforts
                             </p>
                           </div>
                         </div>
@@ -1000,20 +1264,26 @@ export default function ChurchWebsitePresentationPage() {
                     <div className="p-1">
                       <Card className="overflow-hidden rounded-xl border-0 shadow-sm">
                         <div className="bg-gray-50 p-8">
-                          <div className="aspect-video bg-white rounded-xl overflow-hidden border border-gray-200">
-                            <img
-                              src="/images/google-search-console/28day.png"
-                              alt="Google Search Console - 28 Day Performance"
-                              className="w-full h-full object-contain"
-                            />
-                          </div>
+                          <a
+                            href="/images/google-search-console/last-year-vs-this-year-clicks.webp"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block cursor-pointer hover:opacity-90 transition-opacity"
+                          >
+                            <div className="aspect-video bg-white rounded-xl overflow-hidden border border-gray-200">
+                              <img
+                                src="/images/google-search-console/last-year-vs-this-year-clicks.webp"
+                                alt="Year-over-Year Clicks Comparison"
+                                className="w-full h-full object-contain"
+                              />
+                            </div>
+                          </a>
                           <div className="mt-6">
                             <h4 className="font-bold text-lg mb-2 text-gray-900">
-                              28-Day Performance Snapshot
+                              Year-over-Year Click Growth
                             </h4>
                             <p className="text-gray-600">
-                              Recent performance showing daily traffic patterns,
-                              click-through rates, and search visibility
+                              Comparing actual clicks from last year to this year, showing measurable traffic increases from SEO optimization
                             </p>
                           </div>
                         </div>
