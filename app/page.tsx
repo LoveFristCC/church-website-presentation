@@ -156,6 +156,14 @@ export default function ChurchWebsitePresentationPage() {
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-24 md:py-32">
         <div className="max-w-4xl mx-auto text-center space-y-8">
+        <div className="flex flex-col items-center space-y-4 mt-12">
+            <img
+              src="/qr-code.png"
+              alt="QR Code"
+              className="w-48 h-48 rounded-lg shadow-lg"
+            />
+            <p className="text-gray-600 font-medium">Scan to view the live website</p>
+          </div>
           <h1 className="text-6xl md:text-7xl font-bold tracking-tight text-gray-900">
             Your Church's
             <br />
