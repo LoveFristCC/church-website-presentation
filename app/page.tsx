@@ -2254,6 +2254,29 @@ export default function ChurchWebsitePresentationPage() {
           <p className="mt-2">
             May your digital campus reach people with the hope of Jesus 24/7/365
           </p>
+          <div className="mt-6 pt-6 border-t border-gray-200">
+            <p className="font-semibold text-gray-900">Kevin Halstead</p>
+            <div className="mt-2 space-y-1">
+              <p>
+                <a
+                  href="https://khalstead.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  khalstead.com
+                </a>
+              </p>
+              <p>
+                <a
+                  href="mailto:mrmichael423@icloud.com"
+                  className="text-blue-600 hover:underline"
+                >
+                  mrmichael423@icloud.com
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
